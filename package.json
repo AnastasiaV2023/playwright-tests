@@ -1,0 +1,37 @@
+{
+  "name": "expandtesting-playwright-tests",
+  "version": "1.0.0",
+  "description": "Playwright automation tests for practice.expandtesting.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "test:chromium": "playwright test --project=chromium",
+    "test:firefox": "playwright test --project=firefox",
+    "test:webkit": "playwright test --project=webkit",
+    "test:login": "playwright test tests/specs/login.spec.ts",
+    "test:inputs": "playwright test tests/specs/inputs.spec.ts",
+    "test:forgot-password": "playwright test tests/specs/forgot-password.spec.ts",
+    "test:checkboxes": "playwright test tests/specs/checkboxes.spec.ts",
+    "test:key-presses": "playwright test tests/specs/key-presses.spec.ts",
+    "test:autocomplete": "playwright test tests/specs/autocomplete.spec.ts",
+    "test:report": "playwright show-report",
+    "test:codegen": "playwright codegen https://practice.expandtesting.com",
+    "install:deps": "playwright install"
+  },
+  "keywords": [
+    "playwright",
+    "automation",
+    "testing",
+    "e2e"
+  ],
+  "author": "NLP-Core-Team",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.61.0",
+    "@types/node": "^25.9.3",
+    "typescript": "^6.0.3"
+  }
+}
